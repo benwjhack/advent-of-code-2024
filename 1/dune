@@ -1,0 +1,9 @@
+(executable
+ (public_name advent_of_code_2024_1)
+ (name main)
+ (promote
+  (until-clean)
+  (into .))
+ (preprocess
+  (pps ppx_jane))
+ (libraries core core_unix.command_unix advent_of_code_2024))
